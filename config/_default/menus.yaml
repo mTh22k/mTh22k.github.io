@@ -1,24 +1,51 @@
-# Navigation Links
-#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
-#     desired widget in your `content/home/` folder.
-#   The weight parameter defines the order that the links will appear in.
+# config/_default/menus.yaml
+# Guide: https://docs.hugoblox.com/page-builder/#menus
 
 main:
-  - name: Tour
-    url: tour
+  - name: Curso
+    # Este 'identifier' é único e será usado para o submenu
+    identifier: curso
     weight: 10
-  - name: News
-    url: post
+  # --- Submenu de "Curso" ---
+  - name: O Curso
+    # Este item pertence ao menu "curso"
+    parent: curso
+    url: '#about' # Exemplo: linka para a seção 'about' da sua página
+    weight: 1
+  - name: Projeto Pedagógico
+    parent: curso
+    url: 'projeto-pedagogico/' # Exemplo: linka para uma futura página
+    weight: 2
+
+  - name: Grade&Docentes
+    identifier: grade
     weight: 20
-  - name: People
-    url: people
+  # --- Submenu de "Grade&Docentes" ---
+  - name: Grade Curricular
+    parent: grade
+    url: 'grade/'
+    weight: 1
+  - name: Corpo Docente
+    parent: grade
+    url: 'docentes/'
+    weight: 2
+  - name: Optativas
+    parent: grade
+    url: 'optativas/'
+    weight: 3
+
+  - name: Documentos&Formulários
+    url: 'documentos/'
     weight: 30
-  - name: Events
-    url: event
+
+  - name: Estágios
+    url: 'estagios/'
     weight: 40
-  - name: Publications
-    url: publication
+
+  - name: Atividades
+    url: 'atividades-formativas/'
     weight: 50
-  - name: Contact
-    url: contact
+
+  - name: Ensalamento
+    url: 'ensalamento/'
     weight: 60

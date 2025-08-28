@@ -35,9 +35,11 @@ header:
   navbar:
     enable: true
     align: r
+    logo: 'logo-ibm.png'
+    logo_alt: 'Logo Informática Biomédica'
     show_logo: true
     show_language: false
-    show_day_night: true
+    show_day_night: false
     show_search: true
     highlight_active_link: false
 
