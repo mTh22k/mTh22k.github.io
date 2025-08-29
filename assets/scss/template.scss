@@ -7,3 +7,101 @@
 .cta-group {
   justify-content: center;
 }
+
+.bloco-de-conteudo-personalizado {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+/* --- Estilos do Rodapé Customizado (Versão Corrigida) --- */
+
+/* Este é o container principal do rodapé, com o fundo verde */
+.custom-footer {
+  background-color: #ffffff; /* Tom de verde escuro */
+  color: rgba(0, 0, 0, 0.85);
+  padding: 50px 0; /* Espaçamento vertical */
+  width: 100%; /* Garante que ocupe a largura total */
+  box-sizing: border-box;
+}
+
+/* Este container interno centraliza o conteúdo */
+.footer-container {
+  max-width: 100%; /* Largura máxima do conteúdo */
+  margin: 0 auto; /* Centraliza o container */
+  padding: 0 20px; /* Adiciona um respiro nas laterais */
+  display: flex;
+  justify-content: space-between; /* Alinha as colunas com espaço entre elas */
+  flex-wrap: wrap; /* Permite que as colunas quebrem em telas menores */
+  gap: 20px; /* Adiciona um espaço entre as colunas quando elas quebram */
+}
+
+/* Estilo para cada uma das 3 colunas */
+.footer-column {
+  min-width: 250px; /* Largura mínima antes de quebrar a linha */
+}
+
+/* Encontre este bloco no seu CSS */
+.footer-column h4 {
+  color: #000000;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+  text-align: center; /* ADICIONE ESTA LINHA */
+}
+
+/* E substitua o bloco ::after por este */
+.footer-column h4::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 35px;
+  height: 3px;
+  background-color: #7ee706; /* Ou a cor verde que você está usando */
+  left: 50%; /* ADICIONE ESTA LINHA */
+  transform: translateX(-50%); /* ADICIONE ESTA LINHA */
+}
+
+.footer-column p {
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+
+.footer-column strong {
+  color: #000000;
+  font-weight: 600;
+}
+
+.footer-column a {
+  color: rgba(0, 0, 0, 0.85);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+/* --- Estilos do Logo na Navbar --- */
+
+/* --- Ajuste do Tamanho do Logo na Navbar --- */
+.navbar-brand img {
+  height: 500px!important; /* << Altere este valor como quiser */
+  width: auto; /* Mantém a proporção da imagem */
+}
+
+/* Transforma o link da marca em um container flexível para alinhar os itens */
+.navbar-brand {
+  display: flex;
+  align-items: center; /* Alinha verticalmente a imagem e o texto */
+}
+
+/* Define o tamanho do logo e o espaçamento */
+.navbar-logo {
+  height: 35px; /* Ajuste a altura conforme necessário */
+  width: auto;  /* Mantém a proporção da imagem */
+  margin-right: 12px; /* Adiciona um espaço entre o logo e o texto */
+}

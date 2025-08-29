@@ -16,18 +16,18 @@ appearance:
 marketing:
   seo:
     site_type: Organization
-    local_business_type: ''
-    org_name: ''
-    description: 'A highly-customizable Hugo research group theme powered by Wowchemy website builder.'
-    twitter: 'GetResearchDev'
+    local_business_type: 'aaa'
+    org_name: 'ibm'
+    description: 'Aaaaaaaaa'
+    twitter: ''
   analytics:
-    google_analytics: ''
-    baidu_tongji: ''
-    google_tag_manager: ''
-    microsoft_clarity: ''
+    google_analytics: 'aa'
+    baidu_tongji: 'aa'
+    google_tag_manager: 'aa'
+    microsoft_clarity: 'aa'
   verification:
-    google: ''
-    baidu: ''
+    google: 'aa'
+    baidu: 'aa'
 
 # Site header
 
@@ -35,11 +35,11 @@ header:
   navbar:
     enable: true
     align: r
-    logo: 'logo-ibm.png'
+    logo: 'logo.png'
     logo_alt: 'Logo Informática Biomédica'
     show_logo: true
-    show_language: false
-    show_day_night: false
+    show_language: true
+    show_day_night: true
     show_search: true
     highlight_active_link: false
 
