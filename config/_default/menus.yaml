@@ -39,13 +39,27 @@ main:
     weight: 30
 
   - name: Estágios
-    url: 'estagios/'
+    identifier: estagios
     weight: 40
-
-  - name: Atividades
-    url: 'atividades-formativas/'
-    weight: 50
+  - name: Regras de Estágio
+    parent: estagios
+    url: /estagios/regras/
+    weight: 1
+  - name: Fluxo de Estágio
+    parent: estagios
+    url: /estagios/fluxo/
+    weight: 2
+  - name: Perguntas Frequentes
+    parent: estagios
+    url: /estagios/perguntas/
+    weight: 3
 
   - name: Noticias
     url: 'post/'
     weight: 60
+
+  - name: Contato
+    url: 'contact/'
+    weight: 60
+
+

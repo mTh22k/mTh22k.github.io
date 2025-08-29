@@ -62,7 +62,6 @@ sections:
     content:
       title: "<span>Endereço</span>"
       text: |
-        e-mail: ibm@inf.ufpr.br
       address:
         street: R. Evaristo F. Ferreira da Costa, 383-391
         city: Curitiba
