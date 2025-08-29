@@ -1,24 +1,24 @@
 ---
 # Display name
-title: Nelson Bighetti
+title: Guilherme Alex Derenievicz
 
 # Full Name (for SEO)
-first_name: Nelson
-last_name: Bighetti
+first_name: Guilherme
+last_name: Derenievicz
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: Coordenador do curso
 
 # Organizations/Affiliations
 organizations:
-  - name: Stanford University
-    url: ''
+  - name: Departamento de Informatica
+    url: "https://web.inf.ufpr.br/dinf/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio:
 
 interests:
   - Artificial Intelligence
@@ -44,7 +44,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:test@example.org'
+    link: "mailto:test@example.org"
   - icon: twitter
     icon_pack: fab
     link: https://twitter.com/GeorgeCushen
@@ -61,7 +61,7 @@ social:
 #   link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ''
+email: ""
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false

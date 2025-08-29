@@ -46,6 +46,6 @@ main:
     url: 'atividades-formativas/'
     weight: 50
 
-  - name: Ensalamento
-    url: 'ensalamento/'
+  - name: Noticias
+    url: 'post/'
     weight: 60
