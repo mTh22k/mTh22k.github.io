@@ -1,65 +1,149 @@
 # config/_default/menus.yaml
+
 # Guide: https://docs.hugoblox.com/page-builder/#menus
 
+
 main:
-  - name: Curso
-    # Este 'identifier' é único e será usado para o submenu
-    identifier: curso
-    weight: 10
+
   # --- Submenu de "Curso" ---
-  - name: O Curso
-    # Este item pertence ao menu "curso"
+
+  - name: Curso
+
+  # Este 'identifier' é único e será usado para o submenu
+
+    identifier: curso
+
+    weight: 10
+
+  - name: Módulos e Duração do Curso
+
     parent: curso
-    url: '#about' # Exemplo: linka para a seção 'about' da sua página
+
+    url: 'curso/modulos/'
+
     weight: 1
-  - name: Projeto Pedagógico
+
+  - name: Perfil do Egresso
+
     parent: curso
-    url: 'projeto-pedagogico/' # Exemplo: linka para uma futura página
-    weight: 2
+
+    url: 'curso/perfil-egresso/'
+
+    weight: 3
+
+  - name: O Profissional e o Mercado de Trabalho
+
+    parent: curso
+
+    url: 'curso/mercado-trabalho/'
+
+    weight: 4
+
+  - name: Informações Gerais sobre o Curso
+
+    parent: curso
+
+    url: 'curso/informacoes-gerais/'
+
+    weight: 5
+
 
   - name: Grade&Docentes
+
     identifier: grade
+
     weight: 20
+
   # --- Submenu de "Grade&Docentes" ---
-  - name: Grade Curricular
+
+  - name: Grade semestral
+
     parent: grade
-    url: 'grade/'
+
+    url: 'grade/grade-semestral/'
+
     weight: 1
-  - name: Corpo Docente
+
+  - name: Docentes
+
     parent: grade
-    url: 'docentes/'
+
+    url: 'grade/docentes/'
+
     weight: 2
-  - name: Optativas
+
+  - name: Grade 2011
+
     parent: grade
-    url: 'optativas/'
+
+    url: 'grade/grade-2011/'
+
     weight: 3
+
+  - name: Grade 2023
+
+    parent: grade
+
+    url: 'grade/grade-2023/'
+
+    weight: 4
+
+  - name: Projeto pedagogico
+
+    parent: grade
+
+    url: 'grade/projeto-pedagogico/'
+
+    weight: 5
+
 
   - name: Documentos&Formulários
+
     url: 'documentos/'
+
     weight: 30
 
+
   - name: Estágios
+
     identifier: estagios
+
     weight: 40
+
   - name: Regras de Estágio
+
     parent: estagios
+
     url: /estagios/regras/
+
     weight: 1
+
   - name: Fluxo de Estágio
+
     parent: estagios
+
     url: /estagios/fluxo/
+
     weight: 2
+
   - name: Perguntas Frequentes
+
     parent: estagios
+
     url: /estagios/perguntas/
+
     weight: 3
 
+
   - name: Noticias
+
     url: 'post/'
+
     weight: 60
+
 
   - name: Contato
+
     url: 'contact/'
-    weight: 60
 
-
+    weight: 70
