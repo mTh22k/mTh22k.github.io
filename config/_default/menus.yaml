@@ -5,145 +5,108 @@
 
 main:
 
-  # --- Submenu de "Curso" ---
-
   - name: Curso
-
-  # Este 'identifier' é único e será usado para o submenu
-
     identifier: curso
-
     weight: 10
-
   - name: Módulos e Duração do Curso
-
     parent: curso
-
     url: 'curso/modulos/'
-
     weight: 1
-
   - name: Perfil do Egresso
-
     parent: curso
-
     url: 'curso/perfil-egresso/'
-
     weight: 3
-
   - name: O Profissional e o Mercado de Trabalho
-
     parent: curso
-
     url: 'curso/mercado-trabalho/'
-
     weight: 4
-
   - name: Informações Gerais sobre o Curso
-
     parent: curso
-
     url: 'curso/informacoes-gerais/'
-
     weight: 5
 
-
   - name: Grade&Docentes
-
     identifier: grade
-
     weight: 20
-
-  # --- Submenu de "Grade&Docentes" ---
-
   - name: Grade semestral
-
     parent: grade
-
     url: 'grade/grade-semestral/'
-
     weight: 1
-
   - name: Docentes
-
     parent: grade
-
     url: 'grade/docentes/'
-
     weight: 2
-
   - name: Grade 2011
-
     parent: grade
-
     url: 'grade/grade-2011/'
-
     weight: 3
-
   - name: Grade 2023
-
     parent: grade
-
     url: 'grade/grade-2023/'
-
     weight: 4
-
   - name: Projeto pedagogico
-
     parent: grade
-
     url: 'grade/projeto-pedagogico/'
-
     weight: 5
 
 
   - name: Documentos&Formulários
-
-    url: 'documentos/'
-
+    identifier: documentos
     weight: 30
+  - name: Normas e Procedimentos
+    parent: documentos
+    url: 'documentos/normas-e-procedimentos'
+    weight: 1
+  - name: Documentos
+    parent: documentos
+    url: 'documentos/documentos'
+    weight: 2
+  - name: ATAS
+    parent: documentos
+    url: 'documentos/atas/'
+    weight: 3
+  - name: Tcc de Curso
+    parent: documentos
+    url: 'documentos/tcc-de-curso/'
+    weight: 4
 
 
   - name: Estágios
-
     identifier: estagios
-
     weight: 40
-
   - name: Regras de Estágio
-
     parent: estagios
-
     url: /estagios/regras/
-
     weight: 1
-
   - name: Fluxo de Estágio
-
     parent: estagios
-
     url: /estagios/fluxo/
-
     weight: 2
-
   - name: Perguntas Frequentes
-
     parent: estagios
-
     url: /estagios/perguntas/
-
     weight: 3
 
+  - name: Atividades Formativas
+    identifier: atividades
+    weight: 50
+  - name: Formularios e Normas
+    parent: atividades
+    url: /atividades/formularios-e-normas/
+    weight: 1
+  - name: Passo a passo
+    parent: atividades
+    url: /atividades/passo-a-passo/
+    weight: 2
+  - name: Perguntas Frequentes
+    parent: atividades
+    url: /atividades/perguntas/
+    weight: 3
 
   - name: Noticias
-
     url: 'post/'
-
     weight: 60
 
-
   - name: Contato
-
     url: 'contact/'
-
     weight: 70
