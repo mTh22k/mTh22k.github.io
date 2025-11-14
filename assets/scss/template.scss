@@ -89,7 +89,7 @@
 
 /* --- Ajuste do Tamanho do Logo na Navbar --- */
 .navbar-brand img {
-  height: 500px!important; /* << Altere este valor como quiser */
+  height: 500px !important; /* << Altere este valor como quiser */
   width: auto; /* Mantém a proporção da imagem */
 }
 
@@ -102,6 +102,78 @@
 /* Define o tamanho do logo e o espaçamento */
 .navbar-logo {
   height: 35px; /* Ajuste a altura conforme necessário */
-  width: auto;  /* Mantém a proporção da imagem */
+  width: auto; /* Mantém a proporção da imagem */
   margin-right: 12px; /* Adiciona um espaço entre o logo e o texto */
+}
+
+/* --- Estilos Customizados para o Acordeão (Página de Normas) --- */
+
+/* Remove a borda padrão de cada item */
+.accordion-item {
+  border: none;
+  border-bottom: 1px solid #e0e0e0; /* Adiciona uma linha separadora fina */
+}
+
+/* Estilo do botão (quando está fechado) */
+.accordion-button {
+  background-color: #ffffff; /* Fundo branco (em vez de cinza) */
+  color: #212529; /* Cor do texto (preto) */
+  font-size: 1.15rem; /* Fonte um pouco maior */
+  font-weight: 600; /* Título em negrito */
+  padding: 1.25rem 1.25rem;
+}
+
+/* Remove a sombra azul feia que aparece ao clicar */
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.125);
+}
+
+/* Estilo do botão (quando está ABERTO) */
+.accordion-button:not(.collapsed) {
+  color: #ffffff; /* Texto branco */
+  background-color: #009c3b; /* Fundo verde (a cor principal do seu site) */
+  box-shadow: none;
+}
+
+/* --- Mágica para mudar a cor do ícone (seta) --- */
+
+/* Ícone (seta) quando está FECHADO */
+.accordion-button::after {
+  /* Substituímos o ícone SVG padrão por um com a cor verde */
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23009c3b'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+/* Ícone (seta) quando está ABERTO */
+.accordion-button:not(.collapsed)::after {
+  /* Substituímos o ícone SVG por um com a cor branca */
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+/* Espaçamento interno do conteúdo */
+.accordion-body {
+  padding: 1.5rem 1.25rem;
+}
+
+/* --- Estilos Customizados para os Cards de TCC --- */
+
+.tcc-card {
+  background-color: #f8f9fa; /* Um fundo cinza bem claro */
+  border-left: 5px solid #009c3b; /* A borda verde do seu tema */
+  padding: 1.25rem; /* Espaçamento interno */
+  height: 100%; /* Faz os cards da mesma linha terem a mesma altura */
+  display: flex;
+  flex-direction: column;
+}
+
+.tcc-card h5 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem; /* Espaço abaixo do título */
+}
+
+.tcc-card p {
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem; /* Menos espaço entre as linhas de professor/aluno */
 }
