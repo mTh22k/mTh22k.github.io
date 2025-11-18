@@ -2,9 +2,7 @@
 
 # Guide: https://docs.hugoblox.com/page-builder/#menus
 
-
 main:
-
   - name: Curso
     identifier: curso
     weight: 10
@@ -36,10 +34,6 @@ main:
     parent: grade
     url: 'grade/docentes/'
     weight: 2
-  - name: Grade 2011
-    parent: grade
-    url: 'grade/grade-2011/'
-    weight: 3
   - name: Grade 2023
     parent: grade
     url: 'grade/grade-2023/'
@@ -48,7 +42,6 @@ main:
     parent: grade
     url: 'grade/projeto-pedagogico/'
     weight: 5
-
 
   - name: Documentos&Formulários
     identifier: documentos
@@ -61,15 +54,10 @@ main:
     parent: documentos
     url: 'documentos/documentos'
     weight: 2
-  - name: ATAS
-    parent: documentos
-    url: 'documentos/atas/'
-    weight: 3
   - name: Tcc de Curso
     parent: documentos
     url: 'documentos/tcc-de-curso/'
     weight: 4
-
 
   - name: Estágios
     identifier: estagios
@@ -101,6 +89,22 @@ main:
   - name: Perguntas Frequentes
     parent: atividades
     url: /atividades/perguntas/
+    weight: 3
+
+  - name: antigo
+    identifier: antigo
+    weight: 55
+  - name: Curriculo 2011
+    parent: antigo
+    url: /antigo/curriculo-2011/
+    weight: 1
+  - name: grade 2011
+    parent: antigo
+    url: /antigo/grade-2011/
+    weight: 2
+  - name: projeto pedagogico 2011
+    parent: antigo
+    url: /antigo/projeto-pedagogico-2011/
     weight: 3
 
   - name: Noticias
