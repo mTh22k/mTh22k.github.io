@@ -11,19 +11,13 @@ sections:
         <br>
         <span style="font-size: 0.6em;">UFPR</span>
     design:
-      background:
-        image:
-          filename: background-curso.jpg
-          filters:
-            brightness: 0.6
-          parallax: false
-          position: center
-          size: cover
-        gradient_end: "rgba(66, 184, 38, 0.8)"
-        gradient_start: "rgba(0, 156, 59, 0.8)"
-        text_color_light: true
-      css_style: "min-height: 100vh; padding: 400px 0; text-align: center !important;"
-      css_class: "hero-centered"
+      css_style: 'min-height: 100vh; padding: 400px 0; text-align: center !important;'
+      css_class: 'hero-centered'
+      #   gradient_end: "rgba(66, 184, 38, 0.8)"
+      #   gradient_start: "rgba(0, 156, 59, 0.8)"
+      #   text_color_light: true
+      # css_style: "min-height: 100vh; padding: 400px 0; text-align: center !important;"
+      # css_class: "hero-centered"
 
   - block: features
     id: about
@@ -60,19 +54,19 @@ sections:
   - block: contact
     id: contact
     content:
-      title: "<span>Endereço</span>"
+      title: '<span>Endereço</span>'
       text: |
       address:
         street: R. Evaristo F. Ferreira da Costa, 383-391
         city: Curitiba
         region: PR
-        postcode: "82590-300"
+        postcode: '82590-300'
         country: Brazil
         country_code: BR
       coordinates:
-        latitude: "-25.451115"
-        longitude: "-49.232082"
+        latitude: '-25.451115'
+        longitude: '-49.232082'
       autolink: true
     design:
-      columns: "1"
+      columns: '1'
 ---

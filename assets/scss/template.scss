@@ -13,55 +13,61 @@
   justify-content: center;
   background-color: black;
 }
-/* --- Estilos do Rodapé Customizado (Versão Corrigida) --- */
 
-/* Este é o container principal do rodapé, com o fundo verde */
+/* --- Estilos do Rodapé Customizado (Adaptável Claro/Escuro) --- */
+
 .custom-footer {
-  background-color: #ffffff; /* Tom de verde escuro */
-  color: rgba(0, 0, 0, 0.85);
-  padding: 50px 0; /* Espaçamento vertical */
-  width: 100%; /* Garante que ocupe a largura total */
+  /* Usa a cor de fundo padrão do tema (branco no dia, preto na noite) */
+  background-color: var(--bs-body-bg);
+  /* Usa a cor de texto padrão do tema */
+  color: var(--bs-body-color);
+  padding: 50px 0;
+  width: 100%;
   box-sizing: border-box;
+  border-top: 1px solid rgba(0, 0, 0, 0.1); /* Uma linha sutil para separar */
 }
 
-/* Este container interno centraliza o conteúdo */
+/* Ajuste para borda visível no modo escuro */
+[data-theme='dark'] .custom-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .footer-container {
-  max-width: 100%; /* Largura máxima do conteúdo */
-  margin: 0 auto; /* Centraliza o container */
-  padding: 0 20px; /* Adiciona um respiro nas laterais */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
   display: flex;
-  justify-content: space-between; /* Alinha as colunas com espaço entre elas */
-  flex-wrap: wrap; /* Permite que as colunas quebrem em telas menores */
-  gap: 20px; /* Adiciona um espaço entre as colunas quando elas quebram */
+  justify-content: center; /* <--- MUDE DE 'space-between' PARA 'center' */
+  flex-wrap: wrap;
+  gap: 40px 150px; /* Aumentei o espaço para ficar melhor */
 }
 
-/* Estilo para cada uma das 3 colunas */
 .footer-column {
-  min-width: 250px; /* Largura mínima antes de quebrar a linha */
+  min-width: 250px;
+  text-align: center; /* <--- ADICIONE ISSO para centralizar o texto dentro da coluna */
+  flex: 0 1 auto;
 }
 
-/* Encontre este bloco no seu CSS */
 .footer-column h4 {
-  color: #000000;
+  color: #000000; /* Ou use var(--bs-body-color) se quiser modo escuro automático */
   font-weight: 600;
   margin-top: 0;
   margin-bottom: 25px;
   position: relative;
   padding-bottom: 10px;
   letter-spacing: 1px;
-  text-align: center; /* ADICIONE ESTA LINHA */
+  text-align: center; /* <--- Garanta que isto está aqui */
 }
 
-/* E substitua o bloco ::after por este */
 .footer-column h4::after {
   content: '';
   position: absolute;
   bottom: 0;
   width: 35px;
   height: 3px;
-  background-color: #7ee706; /* Ou a cor verde que você está usando */
-  left: 50%; /* ADICIONE ESTA LINHA */
-  transform: translateX(-50%); /* ADICIONE ESTA LINHA */
+  background-color: #009c3b; /* Verde do curso */
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .footer-column p {
@@ -70,110 +76,99 @@
 }
 
 .footer-column strong {
-  color: #000000;
+  color: var(--bs-body-color);
   font-weight: 600;
 }
 
 .footer-column a {
-  color: rgba(0, 0, 0, 0.85);
+  color: var(--bs-body-color);
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .footer-column a:hover {
-  color: #000000;
+  color: #009c3b;
   text-decoration: underline;
 }
 
 /* --- Estilos do Logo na Navbar --- */
 
-/* --- Ajuste do Tamanho do Logo na Navbar --- */
 .navbar-brand img {
-  height: 500px !important; /* << Altere este valor como quiser */
-  width: auto; /* Mantém a proporção da imagem */
+  height: 50px !important; /* Ajustado para um tamanho mais padrão */
+  width: auto;
 }
 
-/* Transforma o link da marca em um container flexível para alinhar os itens */
 .navbar-brand {
   display: flex;
-  align-items: center; /* Alinha verticalmente a imagem e o texto */
+  align-items: center;
 }
 
-/* Define o tamanho do logo e o espaçamento */
 .navbar-logo {
-  height: 35px; /* Ajuste a altura conforme necessário */
-  width: auto; /* Mantém a proporção da imagem */
-  margin-right: 12px; /* Adiciona um espaço entre o logo e o texto */
-}
-
-/* --- Estilos Customizados para o Acordeão (Página de Normas) --- */
-
-/* Remove a borda padrão de cada item */
-.accordion-item {
-  border: none;
-  border-bottom: 1px solid #e0e0e0; /* Adiciona uma linha separadora fina */
-}
-
-/* Estilo do botão (quando está fechado) */
-.accordion-button {
-  background-color: #ffffff; /* Fundo branco (em vez de cinza) */
-  color: #212529; /* Cor do texto (preto) */
-  font-size: 1.15rem; /* Fonte um pouco maior */
-  font-weight: 600; /* Título em negrito */
-  padding: 1.25rem 1.25rem;
-}
-
-/* Remove a sombra azul feia que aparece ao clicar */
-.accordion-button:focus {
-  box-shadow: none;
-  border-color: rgba(0, 0, 0, 0.125);
-}
-
-/* Estilo do botão (quando está ABERTO) */
-.accordion-button:not(.collapsed) {
-  color: #ffffff; /* Texto branco */
-  background-color: #009c3b; /* Fundo verde (a cor principal do seu site) */
-  box-shadow: none;
-}
-
-/* --- Mágica para mudar a cor do ícone (seta) --- */
-
-/* Ícone (seta) quando está FECHADO */
-.accordion-button::after {
-  /* Substituímos o ícone SVG padrão por um com a cor verde */
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23009c3b'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-}
-
-/* Ícone (seta) quando está ABERTO */
-.accordion-button:not(.collapsed)::after {
-  /* Substituímos o ícone SVG por um com a cor branca */
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-}
-
-/* Espaçamento interno do conteúdo */
-.accordion-body {
-  padding: 1.5rem 1.25rem;
+  height: 35px;
+  width: auto;
+  margin-right: 12px;
 }
 
 /* --- Estilos Customizados para os Cards de TCC --- */
 
 .tcc-card {
-  background-color: #f8f9fa; /* Um fundo cinza bem claro */
-  border-left: 5px solid #009c3b; /* A borda verde do seu tema */
-  padding: 1.25rem; /* Espaçamento interno */
-  height: 100%; /* Faz os cards da mesma linha terem a mesma altura */
+  /* Fundo adapta: cinza claro no dia, cinza escuro na noite */
+  background-color: var(--bs-light);
+  border-left: 5px solid #009c3b;
+  padding: 1.25rem;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
 
+/* Ajuste específico para o título dentro do card */
 .tcc-card h5 {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #333;
-  margin-bottom: 1rem; /* Espaço abaixo do título */
+  color: var(--bs-body-color); /* Adapta a cor do texto */
+  margin-bottom: 1rem;
 }
 
 .tcc-card p {
   font-size: 0.95rem;
-  margin-bottom: 0.25rem; /* Menos espaço entre as linhas de professor/aluno */
+  margin-bottom: 0.25rem;
+  color: var(--bs-body-color);
+}
+
+/* 1. MODO CLARO (Dia) */
+.hero-centered {
+  /* Imagem de Fundo Clara */
+  background-image: url('/media/background-curso.jpg') !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+
+  color: #ffffff !important;
+}
+
+/* Aplica a cor aos Títulos e remove a sombra */
+.hero-centered h1,
+.hero-centered p,
+.hero-centered span {
+  color: #ffffff !important;
+  text-shadow: none !important; /* Remove a sombra */
+}
+
+/* 2. MODO ESCURO (Noite) */
+.page-wrapper.dark .hero-centered {
+  /* Imagem de Fundo Escura */
+  background-image: url('/media/background-escuro.jpg') !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+
+  color: #000000 !important;
+}
+
+/* Aplica a cor aos Títulos e remove a sombra */
+.page-wrapper.dark .hero-centered h1,
+.page-wrapper.dark .hero-centered p,
+.page-wrapper.dark .hero-centered span {
+  color: #000000 !important;
+  text-shadow: none !important; /* Remove a sombra */
 }
