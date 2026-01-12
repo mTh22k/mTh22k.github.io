@@ -18,10 +18,10 @@ sections:
             <i class="fas fa-question-circle me-2"></i>1. Quais as normas gerais de atividades formativas (AFs)?
           </h4>
           <p>
-            Para o <strong>currículo 2011</strong>, o(a) estudante deverá totalizar <strong>480 horas</strong> obtidas em pelo menos 3 tipos distintos de atividade. As normas estão disponíveis no <a href="/files/projeto-pedagogico-2011.pdf" target="_blank" style="color: #009c3b; text-decoration: underline;">PPC 2011</a>.
+            Para o <strong>currículo 2011</strong>, o(a) estudante deverá totalizar <strong>480 horas</strong> obtidas em pelo menos 3 tipos distintos de atividade. As normas estão disponíveis no <a href="/media/ppc-bib-1-1.pdf" target="_blank" style="color: #009c3b; text-decoration: underline;">PPC 2011</a>.
           </p>
           <p>
-            Para o <strong>currículo 2023</strong>, o(a) estudante deverá totalizar <strong>80 horas</strong> obtidas em pelo menos 3 tipos distintos de atividade. As normas estão disponíveis no <a href="/files/projeto-pedagogico-2023.pdf" target="_blank" style="color: #009c3b; text-decoration: underline;">PPC 2023 (Anexo II)</a>.
+            Para o <strong>currículo 2023</strong>, o(a) estudante deverá totalizar <strong>80 horas</strong> obtidas em pelo menos 3 tipos distintos de atividade. As normas estão disponíveis no <a href="/media/PPC-2-1.pdf" target="_blank" style="color: #009c3b; text-decoration: underline;">PPC 2023 (Anexo II)</a>.
           </p>
           <hr class="my-4">
 

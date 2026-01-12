@@ -19,7 +19,7 @@ sections:
               <div class="tcc-card" style="border-left-color: #009c3b;">
                 <h5 class="card-title"><i class="fas fa-file-pdf me-2"></i>Normas - Currículo 2023</h5>
                 <p class="card-text">As normas para o currículo de 2023 (Anexo II) encontram-se no Projeto Pedagógico do Curso mais recente.</p>
-                <a href="/files/projeto-pedagogico-2023.pdf" target="_blank" rel="noopener" class="btn btn-primary mt-auto" style="background-color: #009c3b; border: none;">Aceder ao PPC 2023</a>
+                <a href="/media/Atividades-Formativas.pdf" target="_blank" rel="noopener" class="btn btn-primary mt-auto" style="background-color: #009c3b; border: none;">Aceder ao PPC 2023</a>
               </div>
             </div>
           </div>

@@ -21,7 +21,7 @@ sections:
               <ul class="list-unstyled" style="padding-left: 1.5rem;">
                 <li class="mb-3">
                   <i class="fas fa-file-pdf" style="margin-right: 10px; color: #D9534F;"></i>
-                  <a href="/files/projeto-pedagogico-2023.pdf" target="_blank" rel="noopener">
+                  <a href="/media/PPC-2-1.pdf" target="_blank" rel="noopener" download>
                     <strong>Projeto Pedagógico (PPC 2023)</strong>
                   </a>
                   <br>

@@ -30,31 +30,31 @@ sections:
               <ul class="list-unstyled" style="padding-left: 1.5rem;">
                 <li class="mb-3">
                   <i class="fas fa-users" style="margin-right: 10px; color: #009c3b;"></i>
-                  <a href="#" target="_blank" rel="noopener">
-                    <strong>Docentes do Departamento de Informática COLOCAR LINKS</strong>
+                  <a href="https://web.inf.ufpr.br/dinf/docentes/" target="_blank" rel="noopener">
+                    <strong>Docentes do Departamento de Informática </strong>
                   </a>
                 </li>
                 <li class="mb-3">
                   <i class="fas fa-users" style="margin-right: 10px; color: #009c3b;"></i>
-                  <a href="#" target="_blank" rel="noopener">
+                  <a href="https://mat.ufpr.br/departamento/Docentes.html" target="_blank" rel="noopener">
                     <strong>Docentes do Departamento de Matemática</strong>
                   </a>
                 </li>
                 <li class="mb-3">
                   <i class="fas fa-users" style="margin-right: 10px; color: #009c3b;"></i>
-                  <a href="#" target="_blank" rel="noopener">
+                  <a href="https://est.ufpr.br/docentes.html" target="_blank" rel="noopener">
                     <strong>Docentes do Departamento de Estatística</strong>
                   </a>
                 </li>
                 <li class="mb-3">
                   <i class="fas fa-users" style="margin-right: 10px; color: #009c3b;"></i>
-                  <a href="#" target="_blank" rel="noopener">
+                  <a href="https://bio.ufpr.br/anatomia/docentes/#Docentes" target="_blank" rel="noopener">
                     <strong>Docentes do Departamento de Anatomia</strong>
                   </a>
                 </li>
                 <li class="mb-3">
                   <i class="fas fa-users" style="margin-right: 10px; color: #009c3b;"></i>
-                  <a href="#" target="_blank" rel="noopener">
+                  <a href="https://bio.ufpr.br/bioquimica/docentes/" target="_blank" rel="noopener">
                     <strong>Docentes do Departamento de Bioquímica e Biologia Molecular</strong>
                   </a>
                 </li>
@@ -64,25 +64,25 @@ sections:
               <ul class="list-unstyled" style="padding-left: 1.5rem;">
                 <li class="mb-3">
                   <i class="fas fa-users" style="margin-right: 10px; color: #009c3b;"></i>
-                  <a href="#" target="_blank" rel="noopener">
+                  <a href="https://bio.ufpr.br/biologiacelular/docentes_e_tecnicos/" target="_blank" rel="noopener">
                     <strong>Docentes do Departamento de Biologia Celular</strong>
                   </a>
                 </li>
                 <li class="mb-3">
                   <i class="fas fa-users" style="margin-right: 10px; color: #009c3b;"></i>
-                  <a href="#" target="_blank" rel="noopener">
+                  <a href="https://saude.ufpr.br/enfermagem/pesquisa-professores/" target="_blank" rel="noopener">
                     <strong>Docentes do Departamento de Enfermagem</strong>
                   </a>
                 </li>
                 <li class="mb-3">
                   <i class="fas fa-users" style="margin-right: 10px; color: #009c3b;"></i>
-                  <a href="#" target="_blank" rel="noopener">
+                  <a href="https://bio.ufpr.br/fisiologia/docentes/" target="_blank" rel="noopener">
                     <strong>Docentes do Departamento de Fisiologia</strong>
                   </a>
                 </li>
                 <li class="mb-3">
                   <i class="fas fa-users" style="margin-right: 10px; color: #009c3b;"></i>
-                  <a href="#" target="_blank" rel="noopener">
+                  <a href="https://bio.ufpr.br/genetica/docentes/" target="_blank" rel="noopener">
                     <strong>Docentes do Departamento de Genética</strong>
                   </a>
                 </li>
