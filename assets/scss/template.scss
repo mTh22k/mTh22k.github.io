@@ -157,7 +157,7 @@
 /* 2. MODO ESCURO (Noite) */
 .page-wrapper.dark .hero-centered {
   /* Imagem de Fundo Escura */
-  background-image: url('/media/background-escuro.jpg') !important;
+  background-image: url('/media/background-escuro.png') !important;
   background-position: center center !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
@@ -171,4 +171,15 @@
 .page-wrapper.dark .hero-centered span {
   color: #000000 !important;
   text-shadow: none !important; /* Remove a sombra */
+}
+
+/* 1. LOGO MODO CLARO (Padrão) */
+.navbar-brand img {
+  content: url('/media/logo.png') !important;
+}
+
+/* 2. LOGO MODO ESCURO (Noite) */
+/* Usando a mesma estrutura que você já validou no background */
+.page-wrapper.dark .navbar-brand img {
+  content: url('/media/logo_branca.png') !important;
 }
