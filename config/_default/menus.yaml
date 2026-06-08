@@ -4,55 +4,61 @@
 
 main:
   - name: Curso
-    identifier: curso
-    weight: 10
-  - name: Módulos e Duração do Curso
-    parent: curso
-    url: 'curso/modulos/'
-    weight: 1
-  - name: Perfil do Egresso
-    parent: curso
-    url: 'curso/perfil-egresso/'
-    weight: 3
-  - name: O Profissional e o Mercado de Trabalho
-    parent: curso
-    url: 'curso/mercado-trabalho/'
-    weight: 4
-  - name: Informações Gerais sobre o Curso
-    parent: curso
-    url: 'curso/informacoes-gerais/'
-    weight: 5
-
-  - name: Grade&Docentes
-    identifier: grade
+    url: ''
     weight: 20
-  - name: Grade semestral
-    parent: grade
-    url: 'grade/grade-semestral/'
+  - name: Integração entre Tecnologia e Saúde
+    url: 'curso/integracao/'
+    parent: Curso
     weight: 1
-  - name: Docentes
-    parent: grade
-    url: 'grade/docentes/'
+  - name: Currículo 2023
+    url: 'curso/curriculo-2023/'
+    parent: Curso
     weight: 2
-  - name: Grade 2023
-    parent: grade
-    url: 'grade/grade-2023/'
-    weight: 4
-  - name: Projeto pedagogico
-    parent: grade
-    url: 'grade/projeto-pedagogico/'
-    weight: 5
+  - name: Projeto Pedagógico
+    url: 'curso/projeto-pedagogico/'
+    parent: Curso
+    weight: 3
 
-  - name: Documentos&Formulários
+  # Mudamos de Grade&Docentes para apenas Docentes e removemos os "parents"
+  - name: Docentes
+    url: 'grade/docentes/'
+    weight: 30
+
+  # Nova aba de Oportunidades adicionada antes de Documentos
+  - name: Oportunidades
+    url: 'oportunidades/'
+    weight: 35
+
+  # - name: Grade&Docentes
+  #   identifier: grade
+  #   weight: 20
+  # - name: Grade semestral
+  #   parent: grade
+  #   url: 'grade/grade-semestral/'
+  #   weight: 1
+  # - name: Docentes
+  #   parent: grade
+  #   url: 'grade/docentes/'
+  #   weight: 2
+  # - name: Grade 2023
+  #   parent: grade
+  #   url: 'grade/grade-2023/'
+  #   weight: 4
+  # - name: Projeto pedagogico
+  #   parent: grade
+  #   url: 'grade/projeto-pedagogico/'
+  #   weight: 5
+
+  - name: Documentos
     identifier: documentos
     weight: 30
   - name: Normas e Procedimentos
     parent: documentos
     url: 'documentos/normas-e-procedimentos'
     weight: 1
-  - name: Documentos
+  - name: Formulários
     parent: documentos
-    url: 'documentos/documentos'
+    url: 'documentos/formularios'
     weight: 2
   - name: Tcc de Curso
     parent: documentos
@@ -91,25 +97,25 @@ main:
     url: /atividades/perguntas/
     weight: 3
 
-  - name: antigo
-    identifier: antigo
-    weight: 55
-  - name: Curriculo 2011
-    parent: antigo
-    url: /antigo/curriculo-2011/
-    weight: 1
-  - name: grade 2011
-    parent: antigo
-    url: /antigo/grade-2011/
-    weight: 2
-  - name: projeto pedagogico 2011
-    parent: antigo
-    url: /antigo/projeto-pedagogico-2011/
-    weight: 3
+  # - name: antigo
+  #   identifier: antigo
+  #   weight: 55
+  # - name: Curriculo 2011
+  #   parent: antigo
+  #   url: /antigo/curriculo-2011/
+  #   weight: 1
+  # - name: grade 2011
+  #   parent: antigo
+  #   url: /antigo/grade-2011/
+  #   weight: 2
+  # - name: projeto pedagogico 2011
+  #   parent: antigo
+  #   url: /antigo/projeto-pedagogico-2011/
+  #   weight: 3
 
-  - name: Noticias
-    url: 'post/'
-    weight: 60
+  # - name: Noticias
+  #   url: 'post/'
+  #   weight: 60
 
   - name: Contato
     url: 'contact/'

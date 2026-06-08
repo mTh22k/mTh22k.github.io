@@ -1,21 +1,56 @@
 <footer class="custom-footer">
+  <style>
+    /* Estilos para a logo da UFPR no rodapé */
+    .footer-logo-ufpr {
+      max-width: 110px; /* Tamanho ideal para não sobrecarregar o bloco */
+      height: auto;
+      margin-bottom: 12px; /* Dá um espacinho elegante antes do título Secretaria */
+      display: block;
+    }
+
+    /* Regras de alternância automática de tema (Claro/Escuro) */
+    .logo-tema-escuro { display: none; }
+    .logo-tema-claro { display: block; }
+
+    /* Quando o modo escuro do template estiver ativo */
+    .dark .logo-tema-claro,
+    body.dark .logo-tema-claro,
+    html.dark .logo-tema-claro {
+      display: none !important;
+    }
+
+    .dark .logo-tema-escuro,
+    body.dark .logo-tema-escuro,
+    html.dark .logo-tema-escuro {
+      display: block !important;
+    }
+  </style>
+<div style="display: flex; justify-content: center; margin-bottom: 30px;">
+  <img src="/media/logo_ufpr.png" alt="UFPR" class="footer-logo-ufpr logo-tema-claro">
+      <img src="/media/logo_ufpr_preta.png" alt="UFPR" class="footer-logo-ufpr logo-tema-escuro">
+
+</div>
   <div class="footer-container">
+
     <div class="footer-column">
       <h4>COORDENAÇÃO</h4>
       <p><strong>Coordenador</strong><br>Guilherme Alex Derenievicz</p>
-      <p><strong>Vice-Coordenador</strong><br>Rachel Carlos Duque Reis</p>
+      <p><strong>Vice-Coordenadora</strong><br>Rachel Carlos Duque Reis</p>
     </div>
+
     <div class="footer-column">
       <h4>SECRETARIA</h4>
-      <p>Fernando Viana</p>
-      <p>Lucas Silva Costa</p>
-      <p><strong>e-mail:</strong> <a href="mailto:ibmj@inf.ufpr.br">ibmj@inf.ufpr.br</a></p>
-      <p><strong>Fone:</strong> (41) 3361-3572 (Em Manutenção)</p>
+      <p>Sidney Macazzo Caigawa</p>
+      <p>Julyana Ferreira</p>
+      <p><strong>e-mail:</strong> <a href="mailto:ibm@inf.ufpr.br">ibm@inf.ufpr.br</a></p>
+      <p><strong>Fone:</strong> (41) 3361-3572</p>
     </div>
+
     <div class="footer-column">
       <h4>ATENDIMENTO</h4>
       <p>Segunda à Sexta</p>
-      <p>08:00 às 20:00</p>
+      <p>09:00 às 18:00</p>
     </div>
+
   </div>
 </footer>

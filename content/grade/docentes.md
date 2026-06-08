@@ -30,13 +30,13 @@ sections:
               <ul class="list-unstyled" style="padding-left: 1.5rem;">
                 <li class="mb-3">
                   <i class="fas fa-users" style="margin-right: 10px; color: #009c3b;"></i>
-                  <a href="https://web.inf.ufpr.br/dinf/docentes/" target="_blank" rel="noopener">
+                  <a href="https://web.inf.ufpr.br/dinf/?page_id=63" target="_blank" rel="noopener">
                     <strong>Docentes do Departamento de Informática </strong>
                   </a>
                 </li>
                 <li class="mb-3">
                   <i class="fas fa-users" style="margin-right: 10px; color: #009c3b;"></i>
-                  <a href="https://mat.ufpr.br/departamento/Docentes.html" target="_blank" rel="noopener">
+                  <a href="https://mat.ufpr.br/departamento/docentes/Docentes.html" target="_blank" rel="noopener">
                     <strong>Docentes do Departamento de Matemática</strong>
                   </a>
                 </li>
