@@ -1,19 +1,34 @@
 <style>
-  /* Centraliza a lista inteira da navbar */
-  .navbar-nav {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: center !important; /* Centraliza o bloco no meio */
-    align-items: center !important;
-    margin: 0 auto !important;         /* Força a margem automática para centralizar */
-    padding: 0 !important;
-    list-style: none !important;
-    gap: 0px !important;              /* Define um espaçamento fixo e controlado entre os itens */
+  /* Apenas em telas de computador (acima de 992px) */
+  @media (min-width: 992px) {
+    .navbar .container, 
+    .navbar .container-fluid {
+      display: flex !important;
+      justify-content: center !important;
+    }
+
+    .navbar-nav {
+      display: flex !important;
+      flex-direction: row !important;
+      justify-content: center !important;
+      align-items: center !important;
+      float: none !important;
+      margin: 0 !important;
+    }
+
+    .navbar-collapse {
+      flex-grow: 0 !important;
+    }
   }
 
-  /* Garante que os itens individuais não forcem largura extra */
-  .navbar-nav .nav-item {
-    float: none !important;
-    margin: 0 !important;              /* Remove margens laterais que desalinham */
+  /* Em telas menores (celular), removemos o flex para o hambúrguer funcionar */
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      display: none !important; /* Esconde o menu se não estiver aberto */
+    }
+    .navbar-collapse.show {
+      display: block !important; /* Mostra o menu quando o usuário clica no hambúrguer */
+    }
   }
 </style>
+
